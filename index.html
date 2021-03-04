@@ -5,75 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glass Dash</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/cards.css">
 </head>
 <body>
     
-    <aside>
+    <aside class="cntMenu">
         <div class="asideHeader">
-            <img src="/neth.png" class="icon">
+            <img src="img/neth.png" class="icon">
         </div>
         <div class="asideBody">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <div class="asideFooter">
-            <a href="https://github.com/nethanzel" target="_blank"><img src="/github.svg"></a>
+        <div class="asideFooter" id="aFooter">
+            <a href="https://github.com/nethanzel" target="_blank"><img src="img/github.svg"></a>
         </div>
     </aside>
 
-    <div class="containter">
-        <div id="topBar">
+    <div id="topBar">
+        <div>
+            <img src="img/bars.png" id="cMenu">
             <input type="text" id="searchTxt" placeholder="Search...">
         </div>
+    </div>
+
+    <div class="containter">
         
         <div id="cardContainer">
 
-            <div class="card">
-                <img src="https://toppng.com/uploads/preview/mountains-sunset-landscape-vector-art-11569790816ljwcswwjll.jpg">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ut excepturi assumenda modi sit nostrum neque natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit tenetur itaque a aperiam at quo exercitationem, fuga fugit corrupti, reprehenderit qui impedit aspernatur, iusto minus ex esse in sed.</p>
-                <div>
-                    <a href="" target="_blank">View</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://toppng.com/uploads/preview/mountains-sunset-landscape-vector-art-11569790816ljwcswwjll.jpg">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ut excepturi assumenda modi sit nostrum neque natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit tenetur itaque a aperiam at quo exercitationem, fuga fugit corrupti, reprehenderit qui impedit aspernatur, iusto minus ex esse in sed.</p>
-                <div>
-                    <a href="" target="_blank">View</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://toppng.com/uploads/preview/mountains-sunset-landscape-vector-art-11569790816ljwcswwjll.jpg">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ut excepturi assumenda modi sit nostrum neque natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit tenetur itaque a aperiam at quo exercitationem, fuga fugit corrupti, reprehenderit qui impedit aspernatur, iusto minus ex esse in sed.</p>
-                <div>
-                    <a href="" target="_blank">View</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://toppng.com/uploads/preview/mountains-sunset-landscape-vector-art-11569790816ljwcswwjll.jpg">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ut excepturi assumenda modi sit nostrum neque natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit tenetur itaque a aperiam at quo exercitationem, fuga fugit corrupti, reprehenderit qui impedit aspernatur, iusto minus ex esse in sed.</p>
-                <div>
-                    <a href="" target="_blank">View</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://toppng.com/uploads/preview/mountains-sunset-landscape-vector-art-11569790816ljwcswwjll.jpg">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ut excepturi assumenda modi sit nostrum neque natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit tenetur itaque a aperiam at quo exercitationem, fuga fugit corrupti, reprehenderit qui impedit aspernatur, iusto minus ex esse in sed.</p>
-                <div>
-                    <a href="" target="_blank">View</a>
-                </div>
-            </div>
+            
+            
 
             <div class="card">
                 <img src="https://toppng.com/uploads/preview/mountains-sunset-landscape-vector-art-11569790816ljwcswwjll.jpg">
@@ -123,6 +86,6 @@
         </div>
 
     </div>
-    
+    <script src="js/layout.js"></script>
 </body>
 </html>

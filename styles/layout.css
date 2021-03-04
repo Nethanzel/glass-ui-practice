@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("https://images.wallpaperscraft.com/image/code_symbols_programming_148512_1366x768.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+    .containter {
+        width: auto;
+        height: auto;
+        min-height: calc(100vh - 65px);
+        background: #ffffff8a;
+        backdrop-filter: blur(7px);
+        overflow: hidden;
+        margin-left: 0vw;
+        padding-top: 65px;
+        padding-left: 0vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+ #topBar { /*//*/
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        max-width: 1350px;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+  #topBar div {
+        background: #fff;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        box-shadow: 2px 2px 5px #000;
+        display: flex;
+        margin: 10px 0;
+        padding: 0px 40px;
+        height: 45px;
+        width: 85%;
+
+  }
+    
+ #topBar input {
+        height: 80%;
+        width: 70%;
+        padding: 0 15px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        opacity: .5;
+        transition: .5s;
+        margin: auto 0;
+    
+    }
+    
+ #topBar input:focus {
+        opacity: 1;
+        transition: .5s;
+    }
+    
+ #topBar img {
+        display: flex;
+        width: 35px;
+        height: 40px;
+        margin: auto 0;
+
+    }
+    
+#cardContainer {
+        width: 99.9%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        max-width: 1366px;
+    }
+
+    
+    aside {
+        width: 0vw;
+        height: 100vh;
+        max-width: 325px;
+        box-shadow: 0px 0px 10px 0px #000;
+        z-index: 110;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: .5s ease-out;
+    }
+    
+    aside .asideHeader {
+        height: 6vw;
+        border-bottom: 1px solid #888;
+        box-shadow: 0px 0px 8px #000;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+    }
+    
+    aside .asideHeader .icon {
+        height: 2vw;
+        width: 8vw;
+        align-self: center;
+        margin-top: 1vw;
+    }
+    
+    aside .asideHeader .logo {
+        align-self: center;
+        width: 20vw;
+        height: 5.2vw;
+        margin-top: -1vw;
+    }
+    
+    aside .asideFooter {
+        height: 10vw;
+        width: 100%;
+        background: linear-gradient(0deg,#fff, transparent);
+        position: absolute;
+        top: calc(100vh - 10vw);
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    aside .asideFooter img {
+        height: 2.5vw;
+        width: 2.5vw;
+        margin: 0 10px;
+        opacity: .6;
+        transition: .5s;
+        padding: 10px 0;
+    
+    }
+    
+    aside .asideFooter img:hover {
+        opacity: 1;
+        transition: .5s;
+    }
+    
+    aside .asideBody {
+        height: 100%;
+        background: #ffffffa8;
+        backdrop-filter: blur(8px);
+    }
+
+@media only screen and (max-width: 500px) {
+  
+    #topBar { /*//*/
+        width: 97%;
+    }
+
+    #topBar div {
+        margin: 10px 0;
+        padding: 0px 25px;
+        width: 100%;
+    }
+
+    aside .asideHeader {
+        height: 16vw;
+    }
+    
+    aside .asideHeader .icon {
+        height: 5vw;
+        width: 20vw;
+        margin-top: 2vw;
+    }
+
+    aside .asideFooter {
+        height: 20vw;
+        width: 100%;
+        top: calc(100vh - 20vw);
+    }
+
+    aside .asideFooter img {
+        height: 8vw;
+        width: 8vw;
+    
+    }
+}
